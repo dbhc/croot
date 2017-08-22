@@ -1,0 +1,18 @@
+/********* Media Breakpoints *********/
+/* Use: @include breakpoint(small) { background: red; }
+   Use: @include breakpoint(“max-width: 480px”) { background: yellow; } */
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (max-width: 1903px) { @content; }
+    }
+    @else if $break == medium {
+        @media (max-width: 1264px) { @content; }
+    }
+    @else if $break == small {
+        @media (max-width: 943px) { @content; }
+    }
+    @else if $break == xsmall {
+        @media (max-width: 600px) { @content; }
+    } 
+}
+

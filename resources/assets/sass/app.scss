@@ -1,0 +1,97 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Import Partials
+@import "variables";
+@import "mixins";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+	color: $pastel-coal !important;
+}
+
+.v-center {
+	display: flex;
+	align-items: center;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.main-header {
+	background: $pastel-blue;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5B86E5, $pastel-blue);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5B86E5, $pastel-blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	.main-header-content {
+		color: $color-white;
+		margin-top: 15vh;
+		margin-bottom: 15vh;
+	}
+
+}
+
+.main-process {
+	padding: 100px 0;
+
+	.main-process-value {
+		margin-top: 50px;
+	}
+}
+
+.main-cta {
+	padding: 150px 0;
+	background: #333;
+	color: $color-white;
+}
+
+.main-about {
+	padding: 100px 0;
+	background: $pastel-pink;
+	color: $color-white;
+
+	h1 {
+		margin-bottom: 40px;
+	}
+}
+
+.main-contact-category {
+	margin-bottom: 25px;
+}
+
+.main-filler {
+	.main-filler-left {
+		height: 500px;
+		background-image: 
+            linear-gradient(
+                rgba(0, 0, 0, 0.25), 
+                rgba(0, 0, 0, 0.25)
+            ), url("/images/001.jpg");
+        background-size: cover;
+	}
+	.main-filler-right {
+		height: 500px;
+		background-image: 
+            linear-gradient(
+                rgba(0, 0, 0, 0.25), 
+                rgba(0, 0, 0, 0.25)
+            ), url("/images/002.jpeg");
+            background-size: cover;
+	}
+}
+
+
+.footer {
+	height: 50px;
+	background: #333333;
+	color: #777777;
+}
+
+.md-dialog {
+	max-width: 500px;
+}
